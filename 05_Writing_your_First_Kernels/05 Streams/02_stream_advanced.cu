@@ -11,6 +11,7 @@ void check(T err, const char* const func, const char* const file, const int line
     }
 }
 
+
 __global__ void kernel1(float *data, int n) {
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
     if (idx < n) {
